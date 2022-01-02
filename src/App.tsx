@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={"temp główna"} />
-        <Route path="drugastrona" element={"temp druga strona"} />
+        <Route path="/drugastrona" element={"temp druga strona"} />
         <Route
         path="*"
         element={
