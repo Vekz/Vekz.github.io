@@ -1,14 +1,19 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import GlobalStyle from './globalStyles'
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <Router basename="/">
-      <Navbar></Navbar>
+      <GlobalStyle />
+      <Navbar />
       <Routes>
         <Route path="/" element={"temp główna"} />
         <Route path="/drugastrona" element={"temp druga strona"} />
+        <Route path="/Skills" element={"temp skille"} />
+        <Route path="/Academics" element={"temp uczelniane"} />
+        <Route path="/Projects" element={"temp projekty"} />
+        <Route path="/Contact" element={"temp kontakt"} />
         <Route
         path="*"
         element={
