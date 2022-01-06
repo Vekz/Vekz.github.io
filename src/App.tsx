@@ -1,6 +1,9 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles'
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer'
+import About from './pages/AboutPage/About';
+
 
 function App() {
   return (
@@ -8,8 +11,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        <Route path="/" element={"temp główna"} />
-        <Route path="/drugastrona" element={"temp druga strona"} />
+        <Route path="/" element={<About/>} />
         <Route path="/Skills" element={"temp skille"} />
         <Route path="/Academics" element={"temp uczelniane"} />
         <Route path="/Projects" element={"temp projekty"} />
@@ -24,6 +26,7 @@ function App() {
           </main>
         }/>
       </Routes>
+      <Footer />
     </Router>
   );
 }

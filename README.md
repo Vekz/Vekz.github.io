@@ -1,8 +1,17 @@
+## Description
+This repositorium holds code and github page for my own portfolio and show-off site. I intend on using it for project descriptions, shader showoffs and any other thing that I want to share with the internet.
+
+## Technologies used:
+- react
+- typescript
+- styled-components
+- react-icons
+- react-router
+- gh-pages
+
 ## Theming and visuals
 For this project theme I used Nord Color Pallete. 
-I decided on it as it is main theme for my private desktop and any app that supports it on it. 
 
-I chose dark background of Polar Night shades, mostly:
-#3B4252 and #4C566A.
+https://www.nordtheme.com/docs/colors-and-palettes
 
-For accents I turned to Snow Storm shades of off-whites, and chose warm gray of #ECEFF4. Also for some more vibrant colors i decided on Frost shade of #88C0D0, and Aurora's #EBCB8B
+I decided on it as it is main theme for my private desktop and any app that supports it.
