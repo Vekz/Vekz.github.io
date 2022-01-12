@@ -1,7 +1,8 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles'
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
 import About from './pages/AboutPage/About';
 
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <Router basename="/">
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<About/>} />
